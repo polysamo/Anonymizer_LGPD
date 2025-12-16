@@ -21,3 +21,49 @@ def mascarar_texto(texto):
     texto_saida = re.sub(padrao_tel, r'\1**-\2', texto_saida)
     
     return texto_saida
+
+def processar_arquivo():
+    """
+    Função de I/O: Lê um arquivo e salva o resultado.
+    """
+    nome_input = input("Digite o nome do arquivo (ex: base_clientes.csv): ")
+    
+    caminhos_tentativa = [
+        nome_input,
+        os.path.join("data", nome_input),
+        os.path.join("..", "data", nome_input)
+    ]
+    
+    arquivo_encontrado = None
+    
+    # Testa qual caminho existe
+    for caminho in caminhos_tentativa:
+        if os.path.exists(caminho):
+            arquivo_encontrado = caminho
+            break
+            
+    if arquivo_encontrado:
+        try:
+            print(f"Lendo arquivo de: {arquivo_encontrado}") # Feedback visual
+            
+            # Leitura
+            with open(arquivo_encontrado, 'r', encoding='utf-8') as f:
+                conteudo_original = f.read()
+            
+            # Processamento
+            conteudo_mascarado = mascarar_texto(conteudo_original)
+            
+            # Extrai o diretorio e o nome do arquivo
+            diretorio, nome_base = os.path.split(arquivo_encontrado)
+            nome_saida = os.path.join(diretorio, f"mascarado_{nome_base}")
+            
+            with open(nome_saida, 'w', encoding='utf-8') as f:
+                f.write(conteudo_mascarado)
+            
+            print(f"\n[SUCESSO] Arquivo processado!")
+            print(f"Salvo como: {nome_saida}\n")
+            
+        except Exception as e:
+            print(f"Erro ao processar arquivo: {e}")
+    else:
+        print("\n[ERRO] Arquivo não encontrado (Verifique se está na pasta 'data').\n")
