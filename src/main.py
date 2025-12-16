@@ -7,7 +7,7 @@ def mascarar_texto(texto):
     Cumpre o item: 'Core de Mascaramento' da EAP.
     """
     # 1. Regex de CPF 
-    padrao_cpf = r'(\d{3})\.\d{3}\.\d{3}[-](\d{2})'
+    padrao_cpf = r'(\d{3})\.\d{3}\.\d{3}[-.](\d{2})'
     
     # 2. Regex de Email
     padrao_email = r'([a-zA-Z0-9])[a-zA-Z0-9._%+-]+(@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})'
