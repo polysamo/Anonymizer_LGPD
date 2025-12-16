@@ -1,0 +1,15 @@
+id,nome,email,telefone,cpf,status
+1,Ana Silva,ana.silva@gmail.com,(11) 98765-4321,123.456.789-00,Ativo
+2,Bruno Souza,bruno_souza@empresa.com.br,(21) 99999-8888,321.654.987-11,Inativo
+3,Carla Dias,carla.d@uol.com.br,(31) 91234-5678,111.222.333-44,Ativo
+4,Diego Ferreira,diego123@hotmail.com,(41) 97777-6666,555.666.777-88,Pendente
+5,Eduarda M.,edu.moraes@tech.io,(11) 91111-2222,999.888.777-66,Ativo
+6,Fábio Jr,fabio.jr@musica.net,(71) 95555-4444,000.111.222-33,Ativo
+7,Gabriel P.,gabriel.p@dominio.com,(91) 99123-4567,147.258.369-12,Cancelado
+8,Helena Costa,helena_costa@adv.org,(81) 98888-7777,741.852.963-00,Ativo
+9,Igor Santos,igor.dev@python.org,(11) 93333-2222,369.258.147-14,Ativo
+10,Júlia Lima,ju.lima@teste.com,(61) 94444-5555,159.357.258-25,Inativo
+11,Lucas B.,lucas.b@email.com,(51) 96666-7777,951.753.852-36,Ativo
+12,Maria Clara,m.clara@loja.com.br,(91) 99988-7766,753.951.159-45,Pendente
+13,Nelson R.,nelson@radio.fm,(11) 91010-2020,123.123.123-12,Ativo
+14,Otávio Mesquita,otavio@tv.com,(11) 93030-4040,456.456.456-45,Ativo

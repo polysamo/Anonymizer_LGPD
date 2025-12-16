@@ -1,0 +1,25 @@
+relatorio_rh_teste.txt
+
+MEMORANDO INTERNO - DEPARTAMENTO DE RH
+Data: 16/12/2025
+Assunto: Atualização Cadastral LGPD
+
+Prezados, seguem os dados inconsistentes encontrados na auditoria de hoje.
+Favor solicitar correção imediata aos funcionários listados abaixo.
+
+1. O funcionário João da Silva informou o CPF 111.222.333-44 mas o cadastro consta como inativo.
+O email de contato dele é joao.silva@empresa.com e o telefone registrado é (11) 91234-5678.
+
+2. A diretora Maria Oliveira (CPF: 999.888.777-66) pediu alteração no email corporativo.
+O novo email deve ser maria.dir@novaempresa.com.br. Contato urgente via (21) 99876-5432.
+
+3. O estagiário Pedro Santos enviou documentação pendente.
+CPF recebido: 555.444.333-22.
+Email pessoal: pedrinho_sk8@bol.com.br.
+Telefone móvel: (31) 98765-4321.
+
+OBS: Lembramos que todos esses dados são sensíveis e devem ser tratados conforme a Lei 13.709/2018.
+Não compartilhem este arquivo sem o devido tratamento de mascaramento.
+
+Atenciosamente,
+Gerência de Segurança da Informação.

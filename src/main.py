@@ -67,3 +67,30 @@ def processar_arquivo():
             print(f"Erro ao processar arquivo: {e}")
     else:
         print("\n[ERRO] Arquivo não encontrado (Verifique se está na pasta 'data').\n")
+
+def menu():
+    """
+    Interface CLI simples.
+    Cumpre o item: 'Interface CLI' da EAP.
+    """
+    while True:
+        print("=== PROJETO LGPD (CLI) ===")
+        print("1. Digitar Texto (Teste Rápido)")
+        print("2. Carregar Arquivo (.txt ou .csv)")
+        print("3. Sair")
+        
+        opcao = input("Opção: ")
+        
+        if opcao == '1':
+            texto = input("Digite o texto: ")
+            print(f"\nResultado: {mascarar_texto(texto)}\n")
+        elif opcao == '2':
+            processar_arquivo()
+        elif opcao == '3':
+            print("Encerrando...")
+            break
+        else:
+            print("Opção inválida.")
+
+if __name__ == "__main__":
+    menu()
